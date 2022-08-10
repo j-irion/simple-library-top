@@ -89,5 +89,4 @@ input[type="checkbox"] {
 
 .content {
     grid-row: 2 / -1;
-    background-color: red;
 }
