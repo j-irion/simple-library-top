@@ -50,3 +50,20 @@ function createBook(book) {
 
   content.appendChild(bookDiv);
 }
+
+function addBook(event) {
+  event.preventDefault();
+
+  let title = document.getElementById("title");
+  let author = document.getElementById("author");
+  let pages = document.getElementById("pages");
+  let read = document.getElementById("read");
+
+  let newBook = new Book(title.value, author.value, pages.value, read.value);
+  addBookToLibrary(newBook);
+
+  title.value = "";
+  author.value = "";
+  pages.value = "";
+  read.value = "";
+}
