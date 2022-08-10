@@ -52,10 +52,7 @@ header button {
 }
 
 header button:hover {
-    height: 42px;
-    width: 158px;
-    padding: 9px 21px;
-    font-size: 69%;
+    transform: scale(0.97);
 }
 
 header button:active {
