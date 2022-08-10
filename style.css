@@ -57,6 +57,10 @@ header button:hover {
     font-size: 69%;
 }
 
+header button:active {
+    background-color: #351c56;
+}
+
 .content {
     grid-row: 2 / -1;
     grid-column: 2 / -1;
