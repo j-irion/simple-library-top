@@ -28,6 +28,13 @@ function createBook(book) {
   let bookDiv = document.createElement("div");
   bookDiv.className = "book";
 
+  let closeButton = document.createElement("button");
+  let buttonSpan = document.createElement("span");
+  buttonSpan.className = "material-symbols-outlined";
+  buttonSpan.innerHTML = "close";
+  closeButton.appendChild(buttonSpan);
+  bookDiv.appendChild(closeButton);
+
   let title = document.createElement("span");
   title.className = "book-title";
   title.textContent = book.title;
