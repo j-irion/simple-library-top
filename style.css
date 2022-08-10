@@ -33,6 +33,21 @@ header h1 {
     margin: 0;
 }
 
+header button {
+    display: flex;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    padding: 10px 22px;
+    color: white;
+    background-color: #482673;
+    border: none;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
 .content {
     grid-row: 2 / -1;
     grid-column: 2 / -1;
