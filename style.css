@@ -90,7 +90,7 @@ input[type="checkbox"] {
 .content {
     grid-row: 2 / -1;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 300px);
+    grid-template-columns: repeat(auto-fill, 350px);
     grid-template-rows: repeat(auto-fill, 350px);
     padding: 30px;
     gap: 30px;
@@ -108,6 +108,23 @@ input[type="checkbox"] {
     gap: 5px;
     border-radius: 8px;
     background-color: #f6ebf4;
+    position: relative;
+}
+
+.book button {
+    background-color: white;
+    border-radius: 50%;
+    border: none;
+    color: #482673;
+    height: 32px;
+    width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    
 }
 
 .book-title {
