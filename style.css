@@ -89,4 +89,32 @@ input[type="checkbox"] {
 
 .content {
     grid-row: 2 / -1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    grid-template-rows: repeat(auto-fill, 350px);
+    padding: 30px;
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Archivo', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    color: #482673;
+    padding: 20px;
+    gap: 5px;
+    border-radius: 8px;
+    background-color: #f6ebf4;
+}
+
+.book-title {
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.book-author {
+    margin-bottom: auto;
+    font-weight: 200;
 }
