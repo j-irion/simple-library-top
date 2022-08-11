@@ -93,6 +93,7 @@ input[type="checkbox"] {
     grid-template-columns: repeat(auto-fill, 350px);
     grid-template-rows: repeat(auto-fill, 350px);
     padding: 30px;
+    padding-top: 0;
     gap: 30px;
 }
 
