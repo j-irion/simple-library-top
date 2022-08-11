@@ -1,10 +1,11 @@
 let myLibrary = [];
 
-function Book(title, author, pages, read) {
+function Book(title, author, pages, read, data) {
   this.title = title;
   this.author = author;
   this.pages = pages;
   this.read = read;
+  this.data = data;
 }
 
 Book.prototype.info = function () {
@@ -18,7 +19,7 @@ function addBookToLibrary(book) {
   createBook(book);
 }
 
-const book1 = new Book("Lord of The Rings", "J.R.R Tolkien", 295, false);
+const book1 = new Book("Lord of The Rings", "J.R.R Tolkien", 295, false, 0);
 
 addBookToLibrary(book1);
 
@@ -65,8 +66,15 @@ function addBook(event) {
   let author = document.getElementById("author");
   let pages = document.getElementById("pages");
   let read = document.getElementById("read");
+  let data = myLibrary.length;
 
-  let newBook = new Book(title.value, author.value, pages.value, read.value);
+  let newBook = new Book(
+    title.value,
+    author.value,
+    pages.value,
+    read.value,
+    data
+  );
   addBookToLibrary(newBook);
 
   title.value = "";
