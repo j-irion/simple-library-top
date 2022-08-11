@@ -71,7 +71,7 @@ function addBook(event) {
     title.value,
     author.value,
     pages.value,
-    read.value,
+    read.checked,
     data
   );
   addBookToLibrary(newBook);
@@ -79,7 +79,7 @@ function addBook(event) {
   title.value = "";
   author.value = "";
   pages.value = "";
-  read.value = "";
+  read.checked = false;
 }
 
 function showLibrary() {
