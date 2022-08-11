@@ -112,7 +112,7 @@ input[type="checkbox"] {
     position: relative;
 }
 
-.book button {
+.close-button {
     background-color: white;
     border-radius: 50%;
     border: none;
@@ -126,6 +126,16 @@ input[type="checkbox"] {
     left: 10px;
     top: 10px;
     
+}
+
+.book-read {
+    font-family: 'Archivo', sans-serif;
+    font-size: 20px;
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+    color: #482673;
+    padding: 5px 8px;
 }
 
 .book-title {
