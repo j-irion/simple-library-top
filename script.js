@@ -25,6 +25,7 @@ function createBook(book) {
 
   let closeButton = document.createElement("button");
   let buttonSpan = document.createElement("span");
+  closeButton.className = "close-button";
   buttonSpan.className = "material-symbols-outlined";
   buttonSpan.innerHTML = "close";
   closeButton.appendChild(buttonSpan);
@@ -50,10 +51,15 @@ function createBook(book) {
   pages.textContent = `${book.pages} pages`;
   bookDiv.appendChild(pages);
 
-  let read = document.createElement("span");
+  let read = document.createElement("button");
   read.className = "book-read";
   read.textContent = book.read ? "already read" : "not yet read";
   bookDiv.appendChild(read);
+
+  read.addEventListener("click", () => {
+    book.read = !book.read;
+    showLibrary();
+  });
 
   content.appendChild(bookDiv);
 }
