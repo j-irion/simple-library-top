@@ -36,6 +36,11 @@ function createBook(book) {
   closeButton.appendChild(buttonSpan);
   bookDiv.appendChild(closeButton);
 
+  closeButton.addEventListener("click", () => {
+    myLibrary[book.data] = "";
+    showLibrary();
+  });
+
   let title = document.createElement("span");
   title.className = "book-title";
   title.textContent = book.title;
@@ -81,4 +86,13 @@ function addBook(event) {
   author.value = "";
   pages.value = "";
   read.value = "";
+}
+
+function showLibrary() {
+  document.querySelector(".content").innerHTML = "";
+  myLibrary
+    .filter((element) => element != "")
+    .forEach((element) => {
+      createBook(element);
+    });
 }
