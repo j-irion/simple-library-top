@@ -8,12 +8,6 @@ function Book(title, author, pages, read, data) {
   this.data = data;
 }
 
-Book.prototype.info = function () {
-  let result = `${this.title} by ${this.author}, ${this.pages} pages, `;
-  if (this.read === false) return result + "not read yet";
-  return result + "already read";
-};
-
 function addBookToLibrary(book) {
   myLibrary.push(book);
   createBook(book);
