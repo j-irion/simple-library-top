@@ -13,10 +13,6 @@ function addBookToLibrary(book) {
   createBook(book);
 }
 
-const book1 = new Book("Lord of The Rings", "J.R.R Tolkien", 295, false, 0);
-
-addBookToLibrary(book1);
-
 function createBook(book) {
   let content = document.querySelector(".content");
 
